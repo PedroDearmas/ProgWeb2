@@ -1,11 +1,9 @@
 package controllers;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,19 +25,12 @@ public class ListarVendaServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		List<VendaPagDigital> listaVendasPagDigital = new ArrayList<VendaPagDigital>();
-
-		VendaPagDigitalDAO vendaPagDigitalDAO = new VendaPagDigitalDAO();
-
 		
 		listaVendasPagDigital = VendaPagDigitalDAO.listarTodas();
-			
 		
 		request.setAttribute("vendas", listaVendasPagDigital);
 		
-		
 		RequestDispatcher rd = request.getRequestDispatcher("ListaDeVendas.jsp");
-		rd.forward(request, response);
-		
-			
+		rd.forward(request, response);	
 	}
 }
