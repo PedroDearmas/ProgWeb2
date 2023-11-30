@@ -19,4 +19,16 @@
 	|	
 	&nbsp;
 	<a href="formBairro">Cadastrar novo bairro</a>		
+	&nbsp;
+	|	
+	&nbsp;
+	<a href="listarTodosBairros">Listar todos os Bairros</a>		
+	&nbsp;
+	|	
+	</br>
+	<a href="bairrosPopulosos">Listar Bairros populososo</a>	
+	&nbsp;
+	|	
+	&nbsp;
+	<a href="consultaDireta">Consulta por nome</a>
 </div>
